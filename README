@@ -1,0 +1,24 @@
+Install:
+-move files to web-folder on your website
+-edit config.php
+-chmod 777 "data"
+-chmod 666 for all .json files on folder "data"
+-cake? )
+
+p.s. if you have "internal" problem try delete .htaccess
+
+if you disabled mining on your server:
+open webstats.class.php found "AND ms.`mining` >0" (on line: 64)
+and delete this part, and all be ok
+
+p.p.s if css/js not load:
+for IIS need change chmod "min" folder
+go min/config.php
+found $min_documentRoot = substr(__FILE__, 0, -15);
+change it like $min_documentRoot = "c:\\xampp\\htdocs\\ws_for_mcmmo_folder";
+its your path if you used windows, or '/home/accountname/public_html' if linux
+
+Upgrade:
+upload & rewrite all files except config.php
+chmod 666 for all .json files on folder "data" if needed
+testing and comment

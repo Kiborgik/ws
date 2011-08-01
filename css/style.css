@@ -1,0 +1,61 @@
+.tooltip{
+ position:absolute;
+ z-index:999;
+ left:-9999px;
+ background-color:#dedede;
+ padding:5px;
+ border:1px solid #fff;
+ -moz-border-radius: 15px;
+ border-radius: 15px;
+ min-width:100px;
+}
+
+.tooltip p{
+ margin:0;
+ padding:0;
+ color:#fff;
+ background-color:#222;
+ padding:2px 7px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+  }
+
+/* Pop-up message and fading background */
+#opaco {
+     background-color: #000000;
+     left: 0;
+     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";/* IE8 */
+     filter:progid:DXImageTransform.Microsoft.Alpha(opacity = 70); /* IE5+ */
+     filter: alpha(opacity=70);/* IE4- */
+     moz-opacity: 0; /* Mozilla */
+     -khtml-opacity: 0; /* Safari */
+     opacity: 0;  /* general CSS3 */
+     position: absolute;
+     top: 0;
+     width: 100%;
+     z-index: 10;
+   }
+
+#popup {
+    margin: 5px;
+    padding: 5px;
+    color:#fff;
+    background-color:#222;
+    border:1px solid #fff;
+    position: fixed;
+    left:50%;
+    top:30%;
+    min-width: 600px;
+    z-index: 11;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#close {
+    cursor: pointer;
+    color: red;
+    margin-left: 300px;
+}
